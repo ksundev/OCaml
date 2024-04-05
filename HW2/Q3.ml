@@ -3,7 +3,6 @@ let rec min lst =
   | [] -> 0
   | [x] -> x
   | hd :: tl -> min_worker hd tl
-
 and min_worker min rest =
   match rest with
   | [] -> min
